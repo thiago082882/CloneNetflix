@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "480105608928",
+    "project_id": "aplicativo--de-filmes",
+    "storage_bucket": "aplicativo--de-filmes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480105608928:android:d355865abb08e64d974285",
+        "android_client_info": {
+          "package_name": "com.example.appfilmes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "480105608928-ceri0t14f1ekuot6leak3vkabfslrb9r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwajZQzzfBYk_3dUvT9VgsJfIoYd2ZtXk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "480105608928-ceri0t14f1ekuot6leak3vkabfslrb9r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

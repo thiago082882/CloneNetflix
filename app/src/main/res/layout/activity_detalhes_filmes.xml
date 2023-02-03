@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".view.DetalhesFilmes">
+
+    <ImageView
+        android:id="@+id/capaFilme"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@color/red"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/tvNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filme 1"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/capaFilme"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/ivAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        app:layout_constraintTop_toBottomOf="@id/tvNome"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="70dp"
+
+        />
+    
+    <TextView
+        android:id="@+id/tvMinhaLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minha Lista"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/ivAdd"
+        app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toStartOf="@id/btAssistir"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="40dp"
+
+        />
+
+    <Button
+        android:id="@+id/btAssistir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assistir"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/ic_play"
+        app:layout_constraintTop_toBottomOf="@id/tvNome"
+        app:layout_constraintStart_toEndOf="@id/tvMinhaLista"
+        app:layout_constraintEnd_toStartOf="@id/tvSaibaMais"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/ivInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_info"
+        app:layout_constraintTop_toBottomOf="@id/tvNome"
+        app:layout_constraintStart_toEndOf="@id/btAssistir"
+       app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="45dp"
+        />
+    <TextView
+        android:id="@+id/tvSaibaMais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saiba Mais"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/ivInfo"
+        app:layout_constraintStart_toEndOf="@id/btAssistir"
+     app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <TextView
+        android:id="@+id/tvDescricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:gravity="start"
+        android:text="Descrição"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btAssistir" />
+
+    <TextView
+        android:id="@+id/tvElenco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="start"
+        android:text="Elenco"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDescricao"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
